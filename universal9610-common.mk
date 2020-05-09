@@ -67,6 +67,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     SamsungDoze
 
+# Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@1.0-impl.9610
+
 # Trust HAL
 PRODUCT_PACKAGES += \
     lineage.trust@1.0-service
