@@ -36,6 +36,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Snap
 
+# FM radio
+PRODUCT_PACKAGES += \
+    FMRadio \
+    libfmjni
+
 # Init
 PRODUCT_PACKAGES += \
     init.samsung.rc \
