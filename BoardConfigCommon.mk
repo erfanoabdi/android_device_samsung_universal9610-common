@@ -83,7 +83,16 @@ BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
 # Ramdisk
-BOARD_ROOT_EXTRA_FOLDERS := efs
+BOARD_ROOT_EXTRA_FOLDERS := \
+    prism \
+    optics \
+    metadata \
+    efs \
+    carrier \
+    dqmdbg \
+    spu \
+    keydata \
+    keyrefuge
 
 # Recovery
 BOARD_HAS_DOWNLOAD_MODE := true
