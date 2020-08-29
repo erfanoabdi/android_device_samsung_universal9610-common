@@ -4,7 +4,7 @@
         "target_path": "hardware/samsung"
     },
     {
-        "repository": "android_kernel_samsung_universal9810",
-        "target_path": "kernel/samsung/universal9810"
+        "repository": "android_kernel_samsung_universal9610",
+        "target_path": "kernel/samsung/universal9610"
     }
 ]

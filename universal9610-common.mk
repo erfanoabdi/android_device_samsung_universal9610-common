@@ -91,7 +91,7 @@ PRODUCT_COPY_FILES += \
 
 # Recovery
 PRODUCT_PACKAGES += \
-    init.recovery.samsungexynos9810.rc
+    init.recovery.samsungexynos9610.rc
 
 # SamsungDoze
 PRODUCT_PACKAGES += \
@@ -112,4 +112,4 @@ PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 -include $(LOCAL_PATH)/product_prop.mk
 
 # Call proprietary blob setup
-$(call inherit-product, vendor/samsung/universal9810-common/universal9810-common-vendor.mk)
+$(call inherit-product, vendor/samsung/universal9610-common/universal9610-common-vendor.mk)

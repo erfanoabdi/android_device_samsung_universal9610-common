@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-COMMON_PATH := device/samsung/universal9810-common
+COMMON_PATH := device/samsung/universal9610-common
 
 # Include
 TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
@@ -33,8 +33,8 @@ TARGET_NO_RADIOIMAGE := true
 # Platform
 BOARD_VENDOR := samsung
 TARGET_BOARD_PLATFORM := exynos5
-TARGET_SOC := exynos9810
-TARGET_BOOTLOADER_BOARD_NAME := universal9810
+TARGET_SOC := exynos9610
+TARGET_BOOTLOADER_BOARD_NAME := universal9610
 
 # Architecture
 TARGET_ARCH := arm64
@@ -64,7 +64,7 @@ TARGET_KERNEL_CLANG_COMPILE := true
 # Kernel
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_SOURCE := kernel/samsung/universal9810
+TARGET_KERNEL_SOURCE := kernel/samsung/universal9610
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE     := 57671680
@@ -114,4 +114,4 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
 
 # Inherit from the proprietary version
--include vendor/samsung/universal9810-common/BoardConfigVendor.mk
+-include vendor/samsung/universal9610-common/BoardConfigVendor.mk
