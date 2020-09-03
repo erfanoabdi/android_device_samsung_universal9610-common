@@ -1,13 +1,5 @@
-# Health
-genfscon sysfs /devices/platform/14360000.hsi2c/i2c-13/13-0066/max77705-fuelgauge u:object_r:sysfs_health:s0
-genfscon sysfs /devices/platform/14360000.hsi2c/i2c-16/16-0066/max77705-fuelgauge u:object_r:sysfs_health:s0
-genfscon sysfs /devices/platform/14360000.hsi2c/i2c-13/13-0066/max77705-charger   u:object_r:sysfs_health:s0
-genfscon sysfs /devices/platform/14360000.hsi2c/i2c-16/16-0066/max77705-charger   u:object_r:sysfs_health:s0
-genfscon sysfs /devices/platform/14370000.hsi2c/i2c-14/14-003b/power_supply/mfc-charger   u:object_r:sysfs_health:s0
-genfscon sysfs /devices/platform/14370000.hsi2c/i2c-17/17-003b/power_supply/mfc-charger   u:object_r:sysfs_health:s0
-
 # Sec Key
 genfscon sysfs /devices/virtual/sec/sec_key                                       u:object_r:sysfs_sec_key:s0
 
 # RTC
-genfscon sysfs /devices/platform/141c0000.speedy/i2c-15/15-0000/s2mps18-rtc/rtc   u:object_r:sysfs_rtc:s0
+genfscon sysfs /devices/platform/11a10000.speedy/i2c-15/15-0000/s2mpu09-rtc/rtc   u:object_r:sysfs_rtc:s0
