@@ -1,18 +1,13 @@
 on early-fs
     setprop sys.usb.configfs 1
-    setprop sys.usb.controller 10c00000.dwc3
+    setprop sys.usb.controller 13200000.dwc3
 
     exec u:r:recovery:s0 -- /system/bin/rm -rf /sbin
     symlink /system/bin /sbin
 
 on fs
-    wait /dev/block/platform/11120000.ufs
-    symlink /dev/block/platform/11120000.ufs /dev/block/bootdevice
-
-    symlink /dev/block/bootdevice/by-name/BOOT /dev/block/bootdevice/by-name/boot
-    symlink /dev/block/bootdevice/by-name/SYSTEM /dev/block/bootdevice/by-name/system
-    symlink /dev/block/bootdevice/by-name/VENDOR /dev/block/bootdevice/by-name/vendor
-    symlink /dev/block/bootdevice/by-name/CACHE /dev/block/bootdevice/by-name/cache
+    wait /dev/block/platform/13520000.ufs
+    symlink /dev/block/platform/13520000.ufs /dev/block/bootdevice
 
 on post-fs
     write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration "Conf 1"
