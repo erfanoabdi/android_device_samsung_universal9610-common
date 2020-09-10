@@ -32,16 +32,13 @@ TARGET_NO_RADIOIMAGE := true
 
 # Platform
 BOARD_VENDOR := samsung
-TARGET_BOARD_PLATFORM := exynos5
-TARGET_SOC := exynos9610
-TARGET_BOOTLOADER_BOARD_NAME := universal9610
 
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_ABI2 :=
-TARGET_CPU_VARIANT := cortex-a53
+TARGET_CPU_VARIANT := cortex-a73
 
 # Secondary Architecture
 TARGET_2ND_ARCH := arm
