@@ -36,7 +36,7 @@ source "${HELPER}"
 setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${LINEAGE_ROOT}" true
 
 # Copyright headers and guards
-write_headers "a51"
+write_headers "a51 m31"
 
 # The standard common blobs
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
